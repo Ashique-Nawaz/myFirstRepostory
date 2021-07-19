@@ -1,2 +1,0 @@
-# myFirstRepostory
-testProject
