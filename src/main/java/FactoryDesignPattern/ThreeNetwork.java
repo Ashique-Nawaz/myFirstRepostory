@@ -9,7 +9,7 @@ package FactoryDesignPattern;
  *
  * @author Administrator
  */
-public class ThreeNetwork extends NetwokFactory{
+public class ThreeNetwork extends NetworkFactory{
 
     public void updateRate() {
         networkRate = 1.35f;

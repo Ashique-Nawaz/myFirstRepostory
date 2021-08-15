@@ -9,13 +9,13 @@ package FactoryDesignPattern;
  *
  * @author Administrator
  */
-public class NetwokFactory {
+public abstract class NetworkFactory {
 
     String networkType ;
     
     float networkRate ;
     
-    public NetwokFactory getNetwok(String networkType) {
+    public NetworkFactory getNetworkFactory(String networkType) {
 //        this.networkType = networkType;
         if("EE".equalsIgnoreCase(networkType)){
             return new EENetwork();
@@ -24,12 +24,15 @@ public class NetwokFactory {
         } else {
             return new LycaNetwork();
         }
+        
     }
+    
+    public abstract void updateRate();
 
     /**
      * Subclass specific handler in factory class
      */ 
-    public NetwokFactory getNetwork() {
+    public NetworkFactory getNetwork() {
         if(this instanceof EENetwork){
             this.networkType = "EE network";
         } else if(this instanceof LycaNetwork){

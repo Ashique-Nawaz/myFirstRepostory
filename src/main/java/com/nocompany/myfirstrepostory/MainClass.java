@@ -3,7 +3,7 @@ package com.nocompany.myfirstrepostory;
 //package testProject;
 
 import FactoryDesignPattern.LycaNetwork;
-import FactoryDesignPattern.NetwokFactory;
+import FactoryDesignPattern.NetworkFactory;
 
 
 public class MainClass {
@@ -11,10 +11,15 @@ public class MainClass {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("my first git project");
-                NetwokFactory network = new LycaNetwork();
-                network.getNetworkRate();
-                NetwokFactory network1 = new LycaNetwork();
-                NetwokFactory network2 = new LycaNetwork();
+                NetworkFactory network = new NetworkFactory("EE");
+                network.updateRate();
+                System.out.println(network.getNetworkRate());
+                network = new NetworkFactory("3");
+                network.updateRate();
+                System.out.println(network.getNetworkRate());
+                network = new NetworkFactory("Lyca");
+                network.updateRate();
+                System.out.println(network.getNetworkRate());
                 
 	}
 

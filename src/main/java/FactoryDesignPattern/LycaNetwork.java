@@ -9,7 +9,7 @@ package FactoryDesignPattern;
  *
  * @author Administrator
  */
-public class LycaNetwork extends NetwokFactory{
+public class LycaNetwork extends NetworkFactory{
 
     public void updateRate() {
         networkRate = 1.5f;

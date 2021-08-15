@@ -9,7 +9,7 @@ package FactoryDesignPattern;
  *
  * @author Administrator
  */
-public class EENetwork extends NetwokFactory{
+public class EENetwork extends NetworkFactory{
 
     public void updateRate() {
         networkRate = 1.75f;
